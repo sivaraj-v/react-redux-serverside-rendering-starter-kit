@@ -1,0 +1,44 @@
+{
+    "name": "payment",
+    "version": "1.0.0",
+    "author": {
+        "name": "Sivaraj(E1143)",
+        "url": "https://github.com/zural"
+    },
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "npm run dev",
+        "webpack:client": "webpack --mode=development --watch",
+        "webpack:start": "nodemon --watch dist --exec node dist/server.js",
+        "dev": "npm-run-all --parallel webpack:*",
+        "build": "webpack --mode=development"
+    },
+    "dependencies": {
+        "express": "^4.16.4",
+        "react": "16.8.6",
+        "react-dom": "16.8.6",
+        "react-helmet": "5.2.0",
+        "react-redux": "^5.1.1",
+        "redux": "^3.7.2",
+        "redux-thunk": "^2.3.0"
+    },
+    "devDependencies": {
+        "@babel/core": "7.4.3",
+        "@babel/plugin-proposal-class-properties": "7.4.0",
+        "@babel/preset-env": "7.4.3",
+        "@babel/preset-react": "7.0.0",
+        "babel-loader": "8.0.5",
+        "babel-polyfill": "^6.26.0",
+        "body-parser": "1.18.3",
+        "css-loader": "^2.1.1",
+        "nodemon": "1.18.11",
+        "npm-run-all": "4.1.5",
+        "style-loader": "^0.23.1",
+        "webpack-node-externals": "1.7.2",
+        "webpack": "4.30.0",
+        "webpack-cli": "3.3.0"
+    },
+    "keywords": [],
+    "license": "ISC"
+}
